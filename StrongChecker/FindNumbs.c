@@ -27,18 +27,18 @@ int main() {
                     return 1;
                 }
             }
-            founded[foundedNumb] = counter;
-            foundedNumb++;
+            found[foundNumb] = counter;
+            foundNumb++;
         }
         counter++;
     }
     
     printf("numbers that follow the rule:\n");
-    for (i = 0; i < foundedNumb; i++) {
-        printf("%d\n", founded[i]);
+    for (i = 0; i < foundNumb; i++) {
+        printf("%d\n", found[i]);
     }
 
-    free(founded);
+    free(found);
 
     return 0;
 }

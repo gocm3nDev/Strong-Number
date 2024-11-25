@@ -3,7 +3,7 @@
 int main(){
 	int number,ft,lt,square;
 	printf("Strong numbers have 4 digits. If the square of the\nsum of the first 2 digits and the last two digits is equal to the\nnumber itself, it is a strong number.\n");
-	printf("Run named Lesson1.c program to see all strong numbers.\n");
+	printf("Run named FindNumbs.c program to see all strong numbers.\n");
 	printf("\n");
 	printf("enter 4 digit numbers: ");
 	scanf("%d",&number);

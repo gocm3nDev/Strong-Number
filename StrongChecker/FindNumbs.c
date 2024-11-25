@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 int main() {
-	int i;
-    int counter = 1000, foundedNumb = 0;
+    int i;
+    int counter = 1000, foundNumb = 0;
     int ft, lt, squareOfNumbs;
 
-    int *founded = malloc(10 * sizeof(int));
-    if (founded == NULL) {
+    int *found = malloc(10 * sizeof(int));
+    if (found == NULL) {
         printf("memory usage error!\n");
         return 1;
     }
@@ -19,10 +19,10 @@ int main() {
         squareOfNumbs = (ft + lt) * (ft + lt);
 
         if (squareOfNumbs == counter) {
-            if (foundedNumb >= allocatedSize) {
+            if (foundNumb >= allocatedSize) {
                 allocatedSize *= 2;
-                founded = realloc(founded, allocatedSize * sizeof(int));
-                if (founded == NULL) {
+                found = realloc(found, allocatedSize * sizeof(int));
+                if (found == NULL) {
                     printf("memory expansion failed!\n");
                     return 1;
                 }
